@@ -12,4 +12,4 @@ const useResgisterModal = create<ResgisterModalStore>((set) => ({
     onClose:() => set({isOpen:false}),
 }))
 
-export default  ResgisterModalStore;
+export default useResgisterModal;
