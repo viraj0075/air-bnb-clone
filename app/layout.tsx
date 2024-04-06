@@ -19,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={nunito.className}>
-          <Navbar/>
           <RegisterModal/>
+          <Navbar/>
       {children}
       </body>
     </html>
