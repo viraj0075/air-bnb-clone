@@ -37,10 +37,11 @@ const Input: React.FC<inputprops> = ({
         "
         />
       )}
+      {/* Fot the Model input feild */}
       <input
         id={id}
         disabled={disabled}
-        {...register(id, { required })}
+        {...register(id, { required:true })}
         placeholder=" "
         type={type}
         className={`
@@ -61,6 +62,7 @@ const Input: React.FC<inputprops> = ({
         ${errors[id] ? "focus:border-rose-500" : "focus:border-black"}
       `}
       />
+      {/* For the label on the model */}
       <label
         className={`
         absolute 
